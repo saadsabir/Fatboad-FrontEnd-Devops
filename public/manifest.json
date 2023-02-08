@@ -1,0 +1,19 @@
+{
+  "short_name": "Fatboar",
+  "name": "Fatboar Restaurants",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./?v3&utm_source=web_app_manifest",
+  "display": "standalone",
+  "theme_color": "#163a1d",
+  "background_color": "#dd4b39",
+  "related_applications": [{
+    "platform": "web",
+    "url": "http://localhost:3000/?v3"
+  }]
+}
