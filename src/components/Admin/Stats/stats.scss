@@ -1,0 +1,29 @@
+#stats{
+    //  background-color: #fff;
+ }
+ #canvasjs-react-chart-container-0 canvas,#canvasjs-react-chart-container-1 canvas, #canvasjs-react-chart-container-2 canvas {
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.graphs{
+    .the-graph {
+        margin: 60px auto;
+        h3 {
+            color: #ccc;
+        }
+    }
+}
+.canvasjs-chart-credit{
+    display: none;
+}
+.title-graph{
+    margin-bottom: 40px;
+}
+.graph-content-div{
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    max-width: 100% !important;
+}

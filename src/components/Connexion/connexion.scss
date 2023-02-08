@@ -1,0 +1,268 @@
+@import '../../assets/sass/global_css.scss';
+
+// Error/Success msg 
+.alert-danger, .alert-success{
+    margin-top: 10px;
+    text-align: center;
+}
+.header-cnx{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    align-self: left;
+}
+.validate-sub{
+    .good-sub{
+        position: absolute;
+        top: calc(50vh - 100px);
+        left: calc(50% - 300px);
+        right: calc(50% - 300px);
+        text-align: center;
+
+    }
+    .good-sub, .not-sub{
+        margin-top: 20px;
+        margin: auto;
+        // Responsive Bigwinner
+        @media only screen and (max-width : 992px) {
+            width: 100%;
+        }
+    }
+}
+#joinus{
+   position: relative;
+    .joinus-block {
+        position: relative;
+        z-index: 1;
+        top: 40px;
+        right: 0;  
+        .alreadysubscribed-rs, .subscribe-form {
+            margin-bottom: 20px;
+            background: #1a1c20;
+            width: 500px;
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+            color: #000;   
+            line-height: 10px50px;
+            transition: all .5s ease-in-out;
+            transform-origin: left top;
+            // transform: scaleY(0); 
+            padding: 30px;
+            border: 2px solid #fff;
+            .fatb-btn-cnx {
+                border : 1px solid #ccc;
+            }
+               // Back to connetion bloc
+            button.cnx-back, button.subscribe-back {
+                position: absolute;
+                right: 30px;
+                color: #ececec;
+                top: 10px;
+                font-size: 12px;
+                background: none;
+                border: none;
+            }
+            .alreadysubscribed-input {
+                margin-top: 20px;
+                .alreadysubscribed-field {
+                    span {
+                        width: 120px;
+                        text-align: left;
+                    }
+                    .fatb-input {
+                        flex-grow: 1;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .rs-btn {
+                display: flex;
+                justify-content: center;
+                .btn {
+                    @media only screen and (max-width : 450px) {
+                        width: 90px;
+                    }
+                    color: white;
+                    width: 120px;
+                    margin: 0 10px;
+                    &.facebook {
+                        background-color: #3b5999;
+                    }
+                    &.twitter {
+                        background-color: #55acee;
+                    }
+                    &.google {
+                        background-color: #dd4b39;
+                    }
+                }
+            }
+            .forgotenpwd {
+                color: white;
+                text-decoration: underline;
+                text-align: center;
+                margin-top: 20px;
+                display: block;
+            }
+       }
+        .subscribe-form{
+            .subscribe-form_inputs {
+                display: flex;
+                flex-direction: column;
+                .form-inputs_box {
+                    input[type=text], input[type=email], input[type=password] {
+                        margin-left: 0;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                }
+            }
+            .subscribe-form_conditions {
+                .form-conditions_box {
+                    margin-bottom: 20px;
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .form-btn {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                .btn-inscription-validate{
+                    background: #1a1c20;
+                    color: #ececec;
+                    padding: 15px;
+                    border: 2px solid #ececec;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 550px){
+        .joinus-block {
+            .alreadysubscribed-rs, .subscribe-form {
+                width:95%;
+                margin: auto;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 550px) and (max-width: 992px) {
+        /* smartphone */
+        .joinus-block {
+            .alreadysubscribed-rs, .subscribe-form {
+                width: 65%;
+                margin: auto;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+// Verification CGU / Newsletter
+#checks {
+    margin-top: 20px;
+}
+.cgu-link {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+        color: #f5cdcd;
+    }
+}
+.cgu-box, .nl-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .cgu-box input, .nl-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #e8f0fe;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .cgu-box:hover input ~ .checkmark, 
+  .nl-box:hover input ~ .checkmark {
+    background-color: #720d13;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .cgu-box input:checked ~ .checkmark,
+  .nl-box input:checked ~ .checkmark {
+    background-color: #720d13;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .cgu-box input:checked ~ .checkmark:after,
+  .nl-box input:checked ~ .checkmark:after  {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .cgu-box .checkmark:after,
+  .nl-box .checkmark:after  {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+@media only screen and (max-width: 600px) {
+    .header-cnx {
+        width: 100%;
+        flex-direction: column;
+        button {
+            &:after {
+                content: '';
+                border-bottom: 2px solid #afa1a1;
+                width: 45%;
+                /* height: 1px; */
+                display: block;
+                padding-top: 20px;
+                text-align: center;
+                margin: auto;
+            }
+            &:last-child{
+               &::after{
+                   content: unset;
+               }
+            }
+        }
+    }
+}

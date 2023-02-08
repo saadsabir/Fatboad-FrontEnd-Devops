@@ -1,0 +1,47 @@
+#gains {
+    //background-color: #fff;
+    padding-bottom: 40px;
+    
+    table {
+        
+        width:970px;
+        margin: auto;
+        color: white;
+        overflow-y: scroll;
+        height: 260px;
+        /*display: block;*/
+    }
+    .no-gain{
+        padding: 30px;
+        text-align: center;
+    }
+}
+/* 
+========================
+      BUTTON CHECK
+========================
+*/
+.btn-check{
+    background: transparent;
+    &.checked{
+        color: #217a0a;
+        &:hover{
+         color: #31ca0b;
+         transition: all 0.5s;
+        }
+    }
+    
+    &.notChecked{
+        color: #72787f;
+        cursor: unset;
+    }
+}
+
+.table-responsive{
+    //padding-top: 5%;
+    //height: 60%;
+    max-height: 25em;
+    height: 25em;
+    padding-top: 0%;
+    margin-top: 5%;
+}

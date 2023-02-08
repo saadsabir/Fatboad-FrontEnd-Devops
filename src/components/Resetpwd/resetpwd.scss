@@ -1,0 +1,29 @@
+#conf-reset {
+    .conf_pwd_box {
+        label{
+            color: #fff;
+            text-shadow: 10px 5px 19px black, 0 0 1em black, 0 0 1.2em black;
+            font-weight: 900;
+        }
+        .reset_pwd_box{
+            width: 100%;
+        }
+        .btn-validate-reset {
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .conf_pwd_box {
+        label{
+            color: #fff;
+            text-shadow: 10px 5px 19px black, 0 0 1em black, 0 0 1.2em black;
+            font-weight: 900;
+        }
+        .reset_pwd_box{
+            width: 100%;
+        }
+    }
+}

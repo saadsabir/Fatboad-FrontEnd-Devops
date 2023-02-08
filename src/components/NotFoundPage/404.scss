@@ -1,0 +1,27 @@
+.NotFoutdPage{
+    .NotFoutdPage_body{
+        position: fixed;
+        padding: 7%;
+        margin: 30px auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .backtohome{
+        background-color: #0e0e0e;
+        color: #fff;
+        font-size: 30px;
+        text-decoration: none;
+        font-family: 'OpenSansBold';
+        border: 1px solid grey;
+        padding: 20px;
+        margin: 20px auto;
+        &:hover {
+            background-color: #fff;
+            color: #0e0e0e
+        }
+    }
+}

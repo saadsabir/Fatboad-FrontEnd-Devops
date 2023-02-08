@@ -1,0 +1,95 @@
+
+/* SINGLE TICKET */
+#ticket{
+    margin-bottom: 1em;
+}
+#ticket{
+    .good-ticket, .not-ticket{
+       //width: max-content;
+       width: auto;
+       text-align: center;
+       margin: auto;
+    }
+    
+
+/* Ticket */
+   .ticket-form {
+       * {
+           margin: auto 10px;
+       }
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       margin: 30px auto;
+       .fatb-ticket-input {
+           flex-grow: 2;
+           border: 2px solid #d7212d;
+           border-radius: 12px;
+           padding: 16px 10px;
+       }
+       .ticket-btn, .ticket-btn:after {
+           color: white;
+           font-family: Helvetica, sans-serif;
+           font-weight: bold;
+           font-size: 36px;
+           text-align: center;
+           text-decoration: none;
+           background-color: #d82f2d;
+           display: block;
+           position: relative;
+           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+           text-shadow: 0px 1px 0px #000;
+           -webkit-filter: dropshadow(color=#000, offx=0 px, offy=1 px);
+           filter: dropshadow(color=#000, offx=0 px, offy=1 px);
+           border-radius: 10px;
+           border: none;
+           width: 6em;
+           margin: 20px auto;
+           cursor: pointer;
+           &:active{
+               top:10px;
+               background-color:#772f2d;
+               
+               -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #772f2d;
+               -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #772f2d;
+               box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #772f2d;
+           }
+           &:after{
+               content:"";
+               height:100%;
+               width:100%;
+               padding:4px;
+               position: absolute;
+               bottom:-15px;
+               left:-4px;
+               z-index:-1;
+               -webkit-border-radius: 5px;
+               -moz-border-radius: 5px;
+               border-radius: 5px;
+             }
+       }
+   }
+/* Ticket */
+
+/* Ticket */
+   @media only screen and (min-width : 992px) {
+       .ticket-form{
+           width: 50%;
+       }
+   }
+ 
+   @media only screen and (max-width : 768px) {
+       .ticket-form{
+           width: 100%;
+       }
+   }
+}
+#filter_tickets_ticket{
+    color: white;
+    background-color: #1A1C20;
+    border: none;
+    height: 48px;
+    border-radius: 5px;
+    width: 267px;
+    text-align: center;
+}
