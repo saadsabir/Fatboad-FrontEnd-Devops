@@ -1,0 +1,17 @@
+version: '3.3'
+
+networks:
+  web:
+    external: true
+
+services:
+  client:
+    restart: unless-stopped
+    image: fatboar-client:latest
+    networks:
+      - web
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.port=3000'
+      - 'traefik.frontend.rule=Host:dev.fatboarrestaurant.com'
+      - 'traefik.docker.network=web'

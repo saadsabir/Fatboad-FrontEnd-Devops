@@ -1,0 +1,27 @@
+version: '3.3'
+
+networks:
+  web:
+    external: true
+
+volumes: 
+  node_modules:
+
+services:
+  client:
+    container_name: fatboar_client
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fatboar-client
+    env_file: .env
+    volumes: 
+      - node_modules:/fatboar
+    networks:
+      - web
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.port=3000'
+      - 'traefik.frontend.rule=Host:fatboarrestaurant.com'
+      - 'traefik.docker.network=web'
